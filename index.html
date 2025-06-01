@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaishnavi Gheewala | QA Tester Portfolio</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #111;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #e50914;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ff4c4c;
+    text-decoration: underline;
+  }
+
+  .container {
+    max-width: 950px;
+    margin: 40px auto 80px;
+    padding: 0 25px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #e50914, #b20710);
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 6px solid #ff1f1f;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.6);
+    animation: gradientShift 8s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  header p {
+    font-size: 1.4rem;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #ffcccc;
+    letter-spacing: 1px;
+  }
+
+  h2.section-title {
+    color: #e50914;
+    border-left: 6px solid #b20710;
+    padding-left: 12px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  section {
+    background: #1a1a1a;
+    padding: 28px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+  }
+
+  section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(229, 9, 20, 0.4);
+  }
+
+  section.slide-in-left,
+  section.slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  section.slide-left-init {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  section.slide-right-init {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  ul {
+    padding-left: 25px;
+    list-style-type: square;
+    color: #ccc;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  ul li strong {
+    color: #ff4c4c;
+  }
+
+  .contact p, p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+
+  .contact p strong {
+    color: #e50914;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-size: 0.95rem;
+    border-top: 1px solid #333;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.6rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    h2.section-title {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Vaishnavi Gheewala</h1>
+    <p>Software Tester</p>
+  </header>
+
+  <div class="container">
+
+    <section class="contact slide-left-init">
+      <p><strong>Email:</strong> <a href="mailto:vaishnavigheewala@gmail.com">vaishnavigheewala@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9428286728</p>
+      <p><strong>Location:</strong> Surat, Gujarat, India</p>
+    </section>
+
+    <section class="slide-right-init">
+      <h2 class="section-title">About Me</h2>
+     <p>Software Tester with expertise in Playwright, Azure DevOps,and GitHub Actions. Skilled in both manual and automatedtesting across UI and API a focus on developing scalable testing solutions for ERP systems. Committed to ensuring high-quality software delivery through effective validation and seamlessproject execution.</p>
+
+    </section>
+
+    <section class="slide-left-init">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>UI & API Testing</li>
+        <li>Automation Tools: Playwright, Postman</li>
+        <li>CI/CD: Azure DevOps, GitHub Actions</li>
+        <li>Soft Skills: Communication, Teamwork, Leadership</li>
+      </ul>
+    </section>
+
+    <section class="slide-right-init">
+      <h2 class="section-title">Experience</h2>
+      <p><strong>Software Tester – THiNKHP Consultant LLP</strong> (Sep 2024 – May 2025)<br>
+      - Built UI and API automated tests and manual tests for ERP systems<br>
+      - Set up CI/CD pipelines using Azure DevOps and GitHub Actions</p>
+
+      <p><strong>Intern – Comnet Development India</strong> (Mar 2024 – Jun 2024)<br>
+      - Developed a Hotel Billing System using .NET Core, ASP.NET MVC<br>
+      - Worked with SQL Server, session management, and migrations</p>
+    </section>
+
+    <section class="slide-left-init">
+      <h2 class="section-title">Education</h2>
+      <p><strong>M.Sc. ICT(Information and Communication Technology)</strong> – Veer Narmad South Gujarat University (2023–2025), SGPA: 7.88<br>
+      <strong>B.Sc. Computer Science</strong> – Shree Ramkrishna Institute of Computer Education and Applied Science (2020–2023), SGPA: 8.18</p>
+    </section>
+
+    <section class="slide-right-init">
+      <h2 class="section-title">Projects</h2>
+      <ul>
+        <li><strong>Automation -3-Part ERP:</strong> Created professional-grade automated tests with UI using Playwright, Node.js, API testing using Postman and CI/CD integration using AzuredevOps.</li>
+        <li><strong>Digital Footwear Shop:</strong> Built inventory management system in .NET for retail operations</li>
+        <li><strong>Hotel Billing System:</strong> Full-stack web application using .NET Core 6.0 and SQL Server with admin/user modules andbilling operations</li>
+        <li><strong>E-Governance System:</strong> Developed feedback/survey system with EJB, PHP, JavaScript, HTML, CSS</li>
+        <li><strong>Banking System:</strong>Web app with transactions, requests, andapprovals using PHP, Bootstrap, MySQL</li>
+      </ul>
+    </section>
+
+    <section class="slide-left-init">
+      <h2 class="section-title">Certifications</h2>
+      <ul>
+        <li>TCS iON – Communication Skills</li>
+        <li>AWS – Cloud Foundations</li>
+        <li>Simplilearn – Software Testing</li>
+        <li>Great Learning – PHP</li>
+        <li>STP – HTML</li>
+        <li>THiNKHP – Software Tester Certificate</li>
+      </ul>
+    </section>
+
+    <section class="slide-right-init">
+      <h2 class="section-title">Languages</h2>
+      <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Gujarati</li>
+      </ul>
+    </section>
+
+    <section class="slide-left-init">
+      <h2 class="section-title">Volunteer Work</h2>
+      <p>NSS Volunteer – VNSGU (Feb 2022)<br>
+      Participated in cleanliness drives and voter awareness campaigns.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Vaishnavi Gheewala | All Rights Reserved
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return rect.top <= window.innerHeight - 100;
+    }
+
+    function animateSections() {
+      sections.forEach(section => {
+        if (isInViewport(section)) {
+          if (section.classList.contains('slide-left-init')) {
+            section.classList.remove('slide-left-init');
+            section.classList.add('slide-in-left');
+          } else if (section.classList.contains('slide-right-init')) {
+            section.classList.remove('slide-right-init');
+            section.classList.add('slide-in-right');
+          }
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateSections);
+    window.addEventListener('load', animateSections);
+  </script>
+</body>
+</html>
